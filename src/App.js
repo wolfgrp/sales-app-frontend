@@ -48,7 +48,7 @@ function App() {
     };
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_BASE_URL}/submit-order`, orderData);
+      const response = await axios.post('https://sales-app-backend-r74k.onrender.com/submit-order', orderData);
       alert('Order submitted successfully!');
       console.log(response.data);
     } catch (error) {
